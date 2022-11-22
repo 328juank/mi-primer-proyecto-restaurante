@@ -1,0 +1,49 @@
+<h1>Nuevo Restaurante</h1>
+<form action="formulario.php" method="post">
+    <fieldset>
+        <legend>Datos</legend>
+        <div class="cont1">
+            <label for="mail">Mail</label>
+            <input type="email" id="mail" name="mail" placeholder="Correo Electronico" size="30" required="required" autofocus>
+            <br>
+            <br>
+            <label for="web">Web</label>
+            <input type="url" id="web" name="web" placeholder="http://www.ejemplo.com" size="50" required="required">
+            <br>
+            <br>
+            <label for="licencias">Número de licencias</label>
+            <input type="number" id="licencias" name="licencias" placeholder="1-3" min="1" max="3" required="required">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Datos Dirección</legend>
+        <div class="cont2">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Restaurante" size="50">
+            <br>
+            <br>
+            <label for="direccion">Dirección</label>
+            <textarea name="direccion" id="direccion" placeholder="calle, número, piso, ciudad" cols="30" rows="5" required="required"></textarea>
+            <br>
+            <br>
+            <label for="codigopostal">Código Postal</label>
+            <input type="text" id="codigopostal" placeholder="código postal" maxlength="5" required="required">
+            <br>
+            <br>
+            <label for="pais">País</label>
+            <select name="pais" id="pais" required="required">
+            <option value="CO">Colombia</option>
+            <option value="CH">Chile</option>
+            <option value="PE">Peru</option>
+            <option value="AR">Argentina</option>
+        </select>
+            <br>
+            <br>
+            <label for="telefono">Número de teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required="required" placeholder="teléfono con prefijo">
+        </div>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+    <input class="boton2" type="reset" value="Borrar">
+</form>
